@@ -1,0 +1,19 @@
+def can_distribute_equally(N, chocolates):
+    results = []
+    for packet in chocolates:
+        if packet % N == 0:
+            results.append("True")
+        else:
+            results.append("False")
+    return results
+
+# Sample input
+N = int(input())
+chocolates = []
+for i in range(4):
+    chocolates.append(int(input()))
+
+# Output
+output = can_distribute_equally(N, chocolates)
+for i in output:
+    print(i,end=" ")
