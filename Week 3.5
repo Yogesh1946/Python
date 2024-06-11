@@ -1,0 +1,16 @@
+def find_zodiac_animal(year):
+    zodiac_animals = {
+        0: "Monkey", 1: "Rooster", 2: "Dog", 3: "Pig", 4: "Rat",
+        5: "Ox", 6: "Tiger", 7: "Hare", 8: "Dragon", 9: "Snake",
+        10: "Horse", 11: "Sheep"
+    }
+    zodiac_year = year % 12
+    animal = zodiac_animals[zodiac_year]
+    return animal
+
+# Sample input
+year = int(input())
+
+# Output
+animal = find_zodiac_animal(year)
+print(f"{year} is the year of the {animal}.")
