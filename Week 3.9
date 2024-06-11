@@ -1,0 +1,17 @@
+def get_second_last_digit(number):
+    # Convert the number to positive if it's negative
+    number = abs(number)
+
+    # Check if the number has at least two digits
+    if number < 10:
+        return -1
+    else:
+        # Extract the second last digit by using integer division and modulo
+        second_last_digit = (number // 10) % 10
+        return second_last_digit
+
+# Sample input
+number = int(input())
+
+# Output
+print(get_second_last_digit(number))
