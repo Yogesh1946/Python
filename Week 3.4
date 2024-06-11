@@ -1,0 +1,15 @@
+def check_vowel(letter):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    
+    if letter.lower() in vowels:
+        return "It's a vowel."
+    elif letter.lower() == 'y':
+        return "Sometimes it's a vowel... Sometimes it's a consonant."
+    else:
+        return "It's a consonant."
+
+# Sample input
+letter = input()
+
+# Output
+print(check_vowel(letter))
